@@ -1,6 +1,5 @@
 package com.example.project1;
 
-
 public class HelloApplication {
 
     public static void main(String[] args) {
@@ -17,14 +16,13 @@ public class HelloApplication {
 
     }
 
-
-
     public static int suma (int a, int b, int c){
         return a+b+c;
 
     }
 
 }
+
 class Coche {
     public int nPuertas = 0;
 
