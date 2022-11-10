@@ -7,9 +7,6 @@ public class HelloApplication {
         result = suma(10, 30, 25);
         System.out.println(result);
 
-        result = resta(100, 30, 25);
-        System.out.println(result);
-
         Coche miCoche = new Coche();
         miCoche.incrementPuertas();
         miCoche.incrementPuertas();
@@ -19,9 +16,6 @@ public class HelloApplication {
 
     public static int suma (int a, int b, int c){
         return a+b+c;
-    }
-    public static int resta (int a, int b, int c){
-        return a-b-c;
     }
 }
 
