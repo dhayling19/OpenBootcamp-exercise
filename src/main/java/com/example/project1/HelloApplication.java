@@ -15,7 +15,6 @@ public class HelloApplication {
         miCoche.incrementPuertas();
         miCoche.incrementPuertas();
         System.out.println(miCoche.nPuertas);
-
     }
 
     public static int suma (int a, int b, int c){
