@@ -20,7 +20,7 @@ public class HelloApplication {
 }
 
 class Coche {
-    public int nPuertas = 0;
+    public int nPuertas = 4;
 
     public void incrementPuertas() {
         this.nPuertas++;
