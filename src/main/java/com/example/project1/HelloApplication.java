@@ -19,14 +19,10 @@ public class HelloApplication {
 
     public static int suma (int a, int b, int c){
         return a+b+c;
-
     }
     public static int resta (int a, int b, int c){
         return a-b-c;
-
     }
-
-
 }
 
 class Coche {
