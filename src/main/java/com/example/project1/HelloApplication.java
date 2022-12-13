@@ -1,20 +1,26 @@
 package com.example.project1;
 
+import java.util.List;
+
 public class HelloApplication {
+  static CocheCRUD cocheCrud = new CocheCRUDImpl();
+  public static void main(String[] args) {
 
-    public static void main(String[] args) {
+      Coche mercedes= new Coche("rojo", 2, "AERW","mercedes ben");
+      Coche rolo= new Coche("azul", 4, "poiy","toyota");
+      Coche merli = new Coche("rosa", 4, "xxx","Peougeot");
+        cocheCrud.save(mercedes);
+        cocheCrud.save(rolo);
+        cocheCrud.save(merli);
 
-       SmartDevice tablet = new SmartDevice("Azul", "Samsung", 523, true);
-        System.out.println(tablet.modelo);
 
-        SmartWatch reloj = new SmartWatch("pink", "apple", true, 352, "5:30");
-        System.out.println(reloj.codigo);
-        System.out.println(reloj.hora);
+        List<Coche> coches = cocheCrud.findAll();
+        System.out.println(coches);
 
-        SmartPhone celular = new SmartPhone("Verde", "Motorolla", 96, true, "Android");
-        System.out.println(celular.siteOperative);
-        System.out.println(celular.codigo);
-    }
+        cocheCrud.delete(mercedes);
+
+        System.out.println(coches);
+  }
 }
 
 
